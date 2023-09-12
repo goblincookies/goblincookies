@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background-color: hsl(261,67%,8%);
+    overflow: hidden;
+}
+
+button {
+    font-size: 2rem;
+    color: hsl(261, 0%, 100%);
+    background-color: hsl(257, 93%, 58%);
+    background-image: radial-gradient(hsl(257,82%,72%), hsl(257,93%,58%));
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 100vw;
+    cursor: pointer;
+    transition:background-position 200ms;
+}
+
+button:hover {
+    background-position: 0 35px;
+}
