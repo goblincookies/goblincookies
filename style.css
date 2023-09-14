@@ -1,9 +1,6 @@
 * {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Courier New', Courier, monospace;
-}
-
-body {
     background-color: darksalmon;
 }
 
@@ -11,16 +8,23 @@ ul {
     list-style-type: none;
 }
 
-a {
-    font-size: 1.2rem;;
+
+img {
+    width: 35vh;
+    margin: 0;
+    padding: 0;
+    background:#ffff;
+    overflow: hidden;
 }
 
-.thumb img {
-    max-width: 35vh;
-    scale: 1rem;
-    transition: scale 200ms;
+.thumb a img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
 }
 
-.thumb a:hover {
-    scale:1.2rem;
+.thumb a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
