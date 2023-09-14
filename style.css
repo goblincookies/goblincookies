@@ -1,0 +1,26 @@
+* {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: darksalmon;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-size: 1.2rem;;
+}
+
+.thumb img {
+    max-width: 35vh;
+    scale: 1rem;
+    transition: scale 200ms;
+}
+
+.thumb a:hover {
+    scale:1.2rem;
+}
