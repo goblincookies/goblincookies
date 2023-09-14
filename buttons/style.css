@@ -1,6 +1,8 @@
-body {
-    margin: 0;
-    min-block-size: 100vh;
+.buttons {
+    margin: auto;
+    width:50%;
+    min-height: 75vh;
+    /* min-block-size: 100vh; */
     display: grid;
     place-content: center;
     background-color: hsl(261,67%,8%);
@@ -11,7 +13,7 @@ button {
     font-size: 2rem;
     color: hsl(261, 0%, 100%);
     background-color: hsl(257, 93%, 58%);
-    background-image: radial-gradient(hsl(257,82%,72%), hsl(257,93%,58%));
+    background-image: radial-gradient( circle, hsl(257,82%,72%), hsl(257,93%,58%));
     background-repeat: no-repeat;
     background-position: 0 100px;
     padding: 1rem 2rem;
