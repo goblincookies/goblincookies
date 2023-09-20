@@ -1,0 +1,75 @@
+/*  BASIC PAGE CONSISTENCY*/
+ul {
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darksalmon;
+    list-style-type: none;
+}
+
+.reference {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+/*  Free Hand Profit */
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.fhp-content-container {
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    line-height: 1.67em;
+    font-size: 15px;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.47em;
+    color: #454545;   
+    margin: 0;
+    padding: 0;
+    outline: 1px dashed yellowgreen;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fhp-gallery {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* gap: 10px; */
+    grid-auto-rows: minmax(100px, auto);
+    background-color: rgba(222,222,222,.24);
+    position:relative;
+    outline: 1px dashed teal;
+}
+
+figure {
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* width: 250px; */
+    height: auto;
+    overflow: hidden;
+    outline: 1px dashed red;
+}
+
+img {
+    width: 100%;
+}
+.fhp-item img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    /* width: 100%;   */
+}
+
+.fhp-item img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+a {
+    display: block;
+}
