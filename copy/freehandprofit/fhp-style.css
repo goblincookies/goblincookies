@@ -12,6 +12,15 @@ ul {
 }
 
 /*  Free Hand Profit */
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(assets/Proxima-Nova-Thin.woff2) format("woff2"), url(assets/Proxima-Nova-Thin.woff2) format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -19,15 +28,15 @@ html {
 }
 
 .fhp-content-container {
-    font-family: "Helvetica Neue",Helvetica,sans-serif;
+    /* font-family: "Helvetica Neue",Helvetica,sans-serif; */
     font-weight: normal;
     line-height: 1.67em;
     font-size: 15px;
     font-family: proxima-nova;
-    font-weight: 400;
+    /* font-weight: 100; */
     font-style: normal;
     line-height: 1.47em;
-    color: #454545;   
+    color: #454545;
     margin: 0;
     padding: 0;
     outline: 1px dashed yellowgreen;
@@ -38,38 +47,88 @@ html {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     /* gap: 10px; */
-    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: minmax(100px, auto); */
     background-color: rgba(222,222,222,.24);
     position:relative;
-    outline: 1px dashed teal;
+    outline: 1px dashed yellow;
+}
+
+.fhp-item {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    outline: 1px dashed lime;
 }
 
 figure {
     display: block;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    /* width: 250px; */
     height: auto;
     overflow: hidden;
+    background: black;
     outline: 1px dashed red;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.fhp-project-title {
+    pointer-events: none;
+    z-index: 100;
+    left: 16%;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translate(-10%, -50%);
+    -moz-transform: translate(-10%, -50%);
+    transform: translate(-10%,-50%);
+    position: absolute;
+
+    font-size: 28px;
+    /* font-weight: 100; */
+    font-style: normal;
+    line-height: 2.4em;
+    letter-spacing: -1px;
+    color: white; 
+    /* opacity: 0; */
+    transition: .4s ease-out;
+    /* background-color: yellow; */
+
+    outline: 1px solid purple;
 }
 
 img {
+    position:relative;
+    opacity: 1;
     width: 100%;
+    margin: 0;
 }
 .fhp-item img{
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    transition: .2s ease-out;
     /* width: 100%;   */
 }
 
 .fhp-item img:hover {
     -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+.fhp-item img:hover ~ .fhp-project-title {
+    opacity: 1;
 }
 
 a {
     display: block;
+}
+
+
+@media (min-width:1765px) {
+
 }
